@@ -10,7 +10,7 @@ class Program
         double[] salesTotals = { 0, 0, 0 };
 
         double grandTotal = 0;
-        double highTotal = 0;
+        double highestTotal = 0;
         string highestSale = "";
 
         while (true)
@@ -32,9 +32,9 @@ class Program
 
                     grandTotal += sale;
 
-                    if (sale > highTotal)
+                    if (sale > highestTotal)
                     {
-                        highTotal = sale;
+                        highestTotal = sale;
                         highestSale = initial;
                     }
                 }
